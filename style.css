@@ -1,0 +1,31 @@
+header {
+    text-align: center;
+    background-color: #e9e5e5;
+    border: solid 1px black;
+    padding: 20px;
+    margin-left: 100pt;
+    margin-right: 100pt;
+    font-size:16pt;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+}
+
+div {
+    border:solid 1px black;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 12pt;
+    margin-left: 100pt;
+    margin-right: 100pt;
+    margin-top:4pt;
+}
+
+img {
+    width: 15%;
+    margin-left:35%;
+}
+
+
+
+

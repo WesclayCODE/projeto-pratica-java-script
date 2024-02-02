@@ -1,13 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 header {
     text-align: center;
     background-color: #e9e5e5;
     border: solid 1px black;
-    padding: 20px;
+    padding: 8px;
     margin-left: 100pt;
     margin-right: 100pt;
     font-size:16pt;
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
+    align-items: center;
 }
 
 div {
@@ -18,13 +24,23 @@ div {
     font-size: 12pt;
     margin-left: 100pt;
     margin-right: 100pt;
-    margin-top:4pt;
+    margin-top:4pt;;    
 }
 
 img {
     width: 15%;
     margin-left:35%;
 }
+
+table, th, td {
+    border: solid 1px black;
+    border-collapse: collapse;  
+}
+
+table {
+    width: 50%;
+}
+
 
 
 

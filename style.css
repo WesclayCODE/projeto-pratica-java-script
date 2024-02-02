@@ -5,25 +5,27 @@
 
 header {
     text-align: center;
-    background-color: #e9e5e5;
+    background-color: #cdd95a;
+    color: #071836;
     border: solid 1px black;
-    padding: 8px;
-    margin-left: 100pt;
-    margin-right: 100pt;
+    padding:8px 100px 8px 150px;
+    margin-left: 12%;
+    margin-right: 12%;
     font-size:16pt;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     display: flex;
     align-items: center;
 }
 
 div {
     border:solid 1px black;
-    padding: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    background-color: #e9e5e5;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: bold;
     font-size: 12pt;
-    margin-left: 100pt;
-    margin-right: 100pt;
+    margin-left: 12%;
+    margin-right: 12%;
     margin-top:4pt;;    
 }
 
@@ -39,6 +41,16 @@ table, th, td {
 
 table {
     width: 50%;
+}
+
+button {
+    background-color:#052750;
+    color: #ffffff;
+    padding: 5px ;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 8pt;
+    border-radius: 15%;
 }
 
 

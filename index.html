@@ -14,51 +14,59 @@
         <main>
             <form>
                 <div>
-                    <label for="nome">NOME:</label><br/><input type="text" name="nome" id="nome" size="90" /><br/><br/>
-                    <label for="cpf">CPF:</label><br><input type="number" name="cpf" id="cpf" />
-                    <label for="nasc">DATA DE NASC.</label><input type="date" name="nasc" id="nasc" /><br/><br />
-                    <label for="ender">ENDEREÇO:</label><br/><input type="text" name="ender" id="ender" size="90" /><br/><br />
-                    <label for="cidade">CIDADE:</label><br/><input type="text" name="cidade" id="cidade" size="25" />
-                    <label for="estado">ESTADO:</label>
+                    <label for="nome">NOME*:</label><br/><input type="text" name="nome" id="nome"
+                     size="90" required maxlength="50"/><br/>
+                    <label for="cpf">CPF*:</label><br><input type="text" name="cpf" id="cpf" 
+                    required maxlength="14"/>
+                    <label for="nasc">DATA DE NASC.* </label><input type="date" name="nasc" id="nasc"
+                     required /><br/>
+                    <label for="ender">ENDEREÇO*:</label><br/><input type="text" name="ender" 
+                    id="ender" size="90" required maxlength="100" /><br/>
+                    <label for="cidade">CIDADE*:</label><br/><input type="text" name="cidade" 
+                    id="cidade" size="25" required maxlength="30"/>
+                    <label for="estado">ESTADO*:</label>
                         <select name="estado" id="estado">
-                            <option value="acre">Acre</option>
-                            <option value="alagoas">Alagoas</option>
-                            <option value="amapa">Amapá</option>
-                            <option value="amazonas">Amazonas</option>
-                            <option value="bahia">Bahia</option>
-                            <option value="ceara">Ceará</option>
-                            <option value="distFed">Distrito Federal</option>
-                            <option value="espiritoSanto">Espírito Santo</option>
-                            <option value="pernambuco">Pernambuco</option>
-                            <option value="">...</option>
-                        </select><br/><br />
-                            <label for="telefone">TELEFONE:</label><br/><input type="tel" name="telefone" id="telefone" />
-                            <label for="email">E-MAIL:</label><input type="email" name="email" id="email" />
-                            <label for="estCivil">ESTADO CIVIL:</label>
+                            <option value=""></option>
+                            <option value="ac">Acre</option>
+                            <option value="al">Alagoas</option>
+                            <option value="ap">Amapá</option>
+                            <option value="am">Amazonas</option>
+                            <option value="ba">Bahia</option>
+                            <option value="ce">Ceará</option>
+                            <option value="df">Distrito Federal</option>
+                            <option value="es">Espírito Santo</option>
+                            <option value="pe">Pernambuco</option>
+                        </select><br/>
+                            <label for="telefone">TELEFONE*:</label><br/><input type="tel" name="telefone" id="telefone" maxlength="20" />
+                            <label for="email">E-MAIL*:</label><input type="email" name="email" id="email"
+                             required />
+                            <label for="estCivil">ESTADO CIVIL*:</label>
                             <select name="estCivil" id="estCivil">
                                 <option value="casado">Casado(a)</option>
                                 <option value="solteiro">Solteiro(a)</option>
                             </select><br /><br />
                             <input type="radio" name="pessoa" value="fisica" required />Pessoa Física
                             <input type="radio" name="pessoa" value="juridica" />Pessoa Jurídica<br /><br />
-                            Senha: <input type="password" name="senha" id="senha" /><br /><br />
-                            Repita a senha: <input type="password" name="repitaSenha" id="repitaSenha"><br /><br />
-                            <input type="checkbox" name="termos" id="termos" required /> <label for="">Concordo com os  <a   href="http://" target="_blank" rel="noopener noreferrer">termos</a>.</label><br /><br />
+                            Senha*: <input type="password" name="senha" id="senha" maxlength="10" required/><br />
+                            Repita a senha*: <input type="password" name="repitaSenha" id="repitaSenha" maxlength="10" required /><br /><br />
+                            <input type="checkbox" name="termos" id="termos" required /> 
+                            <label for="">Concordo com os<a href="http://" target="_blank" rel="noopener noreferrer">
+                            termos</a>.</label><br /><br />
                             <button type="submit">SALVAR</button>
-                            <button type="reset">Limpar campos</button>
+                            <button type="reset">LIMPAR CAMPOS</button>
                             <br /><br/>
-                            <table>
-                                <tr>
-                                    <th>Nome</th>
-                                    <th>CPF</th>
-                                    <th>Telefone</th>
-                                    <th>E-mail</th>
-                                    <th>Estado civil</th>
-                                </tr>
-                            </table>
+                        <table>
+                            <tr>
+                                <th>Nome</th>
+                                <th>CPF</th>
+                                <th>Telefone</th>
+                                <th>E-mail</th>
+                                <th>Estado civil</th>
+                            </tr>
+                        </table>
                  </div>
             </form>
         </main>
-        <footer></footer>
+            <footer></footer>
 </body>
 </html>

@@ -12,10 +12,10 @@
         <img src="imagem.png" alt="logotipo">
     </header>    
         <main>
-            <form>
+            <form id="meuFormulario">
                 <div>
                     <label for="nome">NOME*:</label><br/><input type="text" name="nome" id="nome"
-                     size="90" required maxlength="50"/><br/>
+                     size="90" maxlength="50"/><br/>
                     <label for="cpf">CPF*:</label><br><input type="text" name="cpf" id="cpf" 
                     required maxlength="14"/>
                     <label for="nasc">DATA DE NASC.* </label><input type="date" name="nasc" id="nasc"
@@ -52,7 +52,7 @@
                             <input type="checkbox" name="termos" id="termos" required /> 
                             <label for="">Concordo com os<a href="http://" target="_blank" rel="noopener noreferrer">
                             termos</a>.</label><br /><br />
-                            <button type="submit">SALVAR</button>
+                            <button type="submit" onclick="validacao()">SALVAR</button>
                             <button type="reset">LIMPAR CAMPOS</button>
                             <br /><br/>
                         <table>
@@ -66,6 +66,7 @@
                         </table>
                  </div>
             </form>
+            <script src="script.js"></script>
         </main>
             <footer></footer>
 </body>
